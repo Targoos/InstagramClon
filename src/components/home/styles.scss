@@ -1,0 +1,78 @@
+@import "../../assets/scss/styles.scss";
+
+.home {
+    max-width: 1010px;
+    margin: 0 auto;
+    display: flex;
+    padding: 5.3rem 1rem 0 1rem;
+
+    &__feeds {
+        width: 630px;
+        height: 1000px;
+        border: 1px solid;
+
+    }
+
+    &__sidebar {
+        margin-left: 1.9rem;
+        position: fixed;
+        left: 815px;
+
+        &__home-profile {
+            display: flex;
+            align-items: center;
+
+            &__profile-picture {
+                margin: 0.1rem;
+
+                &__profile-image {
+                    width: 3.2rem;
+                    border-radius: $radius50;
+                }
+
+            }
+
+            &__profile-account {
+                display: flex;
+                flex-direction: column;
+                margin-left: .7rem;
+                
+                &__profile-name {
+                    font-weight: 700;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    color: $black;
+                }
+
+                &__profile-account {
+                    font-weight: 400;
+                    font-size: .8rem;
+                    color: $gray5;
+                }
+            }
+        }
+
+        &__home-history {
+            width: 285px;
+            height: 200px;
+            background-color: $white;
+            border: 1px solid black;
+            margin-top: 1rem;
+            overflow-y: auto;
+
+
+            &__history-nav {
+                display: flex;
+                padding: .5rem;
+                justify-content: space-between;
+                position: fixed;
+                width: 19%;
+                background-color: $white;
+            }
+
+            &__history-profiles {
+                overflow-y: hidden;
+            }
+        }
+    }
+}
