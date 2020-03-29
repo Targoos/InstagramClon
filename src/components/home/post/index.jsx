@@ -39,23 +39,23 @@ const Post = ({ feed }) => {
               className="post__post-footer__post-action__action-link"
               href="#!"
             >
-              <i class="far fa-heart"></i>
+              <i className="far fa-heart"></i>
             </a>
             <a
               className="post__post-footer__post-action__action-link"
               href="#!"
             >
-              <i class="far fa-comment"></i>
+              <i className="far fa-comment"></i>
             </a>
             <a
               className="post__post-footer__post-action__action-link"
               href="#!"
             >
-              <i class="far fa-paper-plane"></i>
+              <i className="far fa-paper-plane"></i>
             </a>
           </div>
           <a className="post__post-footer__post-save" href="#!">
-            <i class="far fa-bookmark"></i>
+            <i className="far fa-bookmark"></i>
           </a>
         </div>
         <a className="post__post-likes" href="#!">

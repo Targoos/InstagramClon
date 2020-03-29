@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./styles.scss";
 import Post from "../home/post";
 import History from "../home/history";
 import Gretel from "../../assets/images/Gretel.png";
 import { userFeeds } from "./posts";
-import axios from "axios";
 
 const Home = () => {
-  const [feeds, saveFeeds] = useState(userFeeds);
+  const [feeds] = useState(userFeeds);
 
   return (
     <>
@@ -19,7 +18,10 @@ const Home = () => {
         </div>
         <div className="home__sidebar">
           <div className="home__sidebar__home-profile">
-            <a className="home__sidebar__home-profile__profile-picture" href="">
+            <a
+              className="home__sidebar__home-profile__profile-picture"
+              href="#!"
+            >
               <img
                 className="home__sidebar__home-profile__profile-picture__profile-image"
                 src={Gretel}
