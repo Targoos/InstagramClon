@@ -1,21 +1,23 @@
 @import "../../assets/scss/styles.scss";
 
 .home {
-  max-width: 1010px;
+  width: 1010px;
   margin: 0 auto;
   display: flex;
-  padding: 5.3rem 1rem 0 1rem;
+  padding: 5.3rem 0rem 0 1rem;
 
-  &__feeds {
+  &__posts {
     width: 630px;
     height: 1000px;
-    border: 1px solid;
   }
 
   &__sidebar {
     margin-left: 1.9rem;
     position: fixed;
-    left: 815px;
+    display: block;
+    width: 100%;
+    margin: auto auto auto 660px;
+    
 
     &__home-profile {
       display: flex;
@@ -36,15 +38,15 @@
         margin-left: 0.7rem;
 
         &__profile-name {
-          font-weight: 700;
-          font-size: 1rem;
+          font-weight: 600;
+          font-size: 0.9rem;
           text-decoration: none;
           color: $black;
         }
 
         &__profile-account {
           font-weight: 400;
-          font-size: 0.8rem;
+          font-size: 0.7rem;
           color: $gray5;
         }
       }
@@ -56,19 +58,19 @@
       background-color: $white;
       border: 1px solid black;
       margin-top: 1rem;
-      overflow-y: auto;
+      overflow-y: scroll;
 
       &__history-nav {
-        display: flex;
         padding: 0.5rem;
+        display: flex;
         justify-content: space-between;
         position: fixed;
-        width: 19%;
+        width: 250px;
         background-color: $white;
       }
 
       &__history-profiles {
-        overflow-y: hidden;
+        height: auto;
       }
     }
   }

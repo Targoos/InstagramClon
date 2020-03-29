@@ -12,7 +12,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div className="main-container">
         <Nav />
         <Switch>
           <Route exact path="/" component={Login} />
@@ -21,7 +20,6 @@ function App() {
           <Route exact path="/Explore" component={Explore} />
           <Route exact path="/Profile" component={Profile} />
         </Switch>
-      </div>
     </Router>
   );
 }

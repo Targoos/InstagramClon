@@ -48,7 +48,7 @@ const Login = () => {
                 <div className="login__body__box__form__decoration__line"></div>
               </div>
               <a href="#!" className="login__body__box__form__fb-login">
-                <i class="fab fa-facebook-square"></i> Iniciar sesión con
+                <i className="fab fa-facebook-square"></i> Iniciar sesión con
                 Facebook
               </a>
               <a

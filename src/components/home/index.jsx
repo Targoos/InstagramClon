@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.scss";
+import Post from "../home/post";
+import History from "../home/history";
 import Gretel from "../../assets/images/Gretel.png";
+import { userFeeds } from "./posts";
+import axios from "axios";
 
 const Home = () => {
+  const [feeds, saveFeeds] = useState(userFeeds);
+
   return (
     <>
       <div className="home">
-        <div className="home__feeds"></div>
+        <div className="home__posts">
+          {feeds.map(i => (
+            <Post feed={i} key={i.id} />
+          ))}
+        </div>
         <div className="home__sidebar">
           <div className="home__sidebar__home-profile">
             <a className="home__sidebar__home-profile__profile-picture" href="">
@@ -41,12 +51,7 @@ const Home = () => {
               </a>
             </div>
             <div className="home__sidebar__home-history__history-profiles">
-              <p>HISTORIA</p>
-              <p>HISTORIA</p>
-              <p>HISTORIA</p>
-              <p>HISTORIA</p>
-              <p>HISTORIA</p>
-              <p>HISTORIA</p>
+              <History />
             </div>
           </div>
           {/* <div className="home__sidebar__suggested-profiles">

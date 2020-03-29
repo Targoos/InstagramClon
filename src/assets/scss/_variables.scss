@@ -1,7 +1,6 @@
 // FONTS
 $main-font: Arial, Helvetica, sans-serif;
-$logo-font: 'Cookie', cursive;
-
+$logo-font: "Cookie", cursive;
 
 // MEDIA QUERIES
 $phone: 480px;
@@ -9,16 +8,17 @@ $tablet: 768px;
 $desktop: 1200px;
 
 // COLORS
-$gray5: #A56F81;
+$gray5: #a56f81;
 $gray4: #999;
-$gray3: #B2B2B2;
-$gray2: #DBDBDB;
-$gray1: #FAFAFA;
-$white: #FFFFFF;
-$blue: #3897F0;
+$gray3: #b2b2b2;
+$gray2: #dbdbdb;
+$gray1: #fafafa;
+$white: #ffffff;
+$blue: #3897f0;
 $dark-blue: #385185;
 $darker-blue: #003569;
 $black: #262626;
+$light-black: #404040;
 
 // SIZES
 $container: 1010px;
@@ -26,3 +26,5 @@ $container: 1010px;
 // RADIUS
 $radius: 0.2rem;
 $radius50: 50%;
+
+// GRADIENT
