@@ -21,6 +21,7 @@
     &__home-profile {
       display: flex;
       align-items: center;
+      margin-bottom: 0.7rem;
 
       &__profile-picture {
         margin: 0.1rem;
@@ -51,22 +52,43 @@
       }
     }
 
-    &__home-history {
+    &__history-nav {
+      padding: 0.7rem 0.9rem 0.5rem 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      width: 285px;
+      align-items: center;
+      background-color: $white;
+      border-top: 1px solid $gray2;
+      border-right: 1px solid $gray2;
+      border-left: 1px solid $gray2;
+      border-radius: $radius;
+
+      &__title {
+        color: $gray5;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      &__see-all {
+        text-decoration: none;
+        color: $black;
+        font-weight: 600;
+        font-size: .7rem;
+      }
+    }
+
+    &__history-container {
       width: 285px;
       height: 200px;
       background-color: $white;
-      border: 1px solid black;
-      margin-top: 1rem;
-      overflow-y: scroll;
+      border-right: 1px solid $gray2;
+      border-bottom: 1px solid $gray2;
+      border-left: 1px solid $gray2;
+      border-radius: $radius;
+      overflow-y: auto;
 
-      &__history-nav {
-        padding: 0.5rem;
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        width: 250px;
-        background-color: $white;
-      }
+      
 
       &__history-profiles {
         height: auto;
