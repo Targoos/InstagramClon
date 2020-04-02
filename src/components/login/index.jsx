@@ -10,78 +10,53 @@ const Login = () => {
   return (
     <>
       <div className="login">
-        <div className="login__body">
-          <img
-            className="login__body__phones"
-            src={phonelogin}
-            alt="phones-login"
-          />
-          <div className="login__body__box">
-            <div className="login__body__box__form">
-              <img
-                className="login__body__box__form__logo"
-                src={logo}
-                alt="logo"
-              />
-              <input
-                className="login__body__box__form__input"
-                type="text"
-                placeholder="Teléfono, usuario o correo electrónico"
-              />
-              <input
-                className="login__body__box__form__input"
-                type="password"
-                placeholder="Contraseña"
-                name=""
-                id=""
-              />
-              <Link
-                to={"/Home"}
-                className="login__body__box__form__button"
-                disabled
-              >
-                Iniciar sesión
-              </Link>
-              <div className="login__body__box__form__decoration">
-                <div className="login__body__box__form__decoration__line"></div>
-                <div className="login__body__box__form__decoration__circle"></div>
-                <div className="login__body__box__form__decoration__line"></div>
-              </div>
-              <a href="#!" className="login__body__box__form__fb-login">
-                <i className="fab fa-facebook-square"></i> Iniciar sesión con
-                Facebook
-              </a>
-              <a
-                href="#!"
-                className="login__body__box__form__forgotten-password"
-              >
-                ¿Has olvidado la contraseña?
-              </a>
+        <img className="login__phones" src={phonelogin} alt="phones-login" />
+        <div className="login__box">
+          <div className="form">
+            <img className="form__logo" src={logo} alt="logo" />
+            <input
+              className="form__input"
+              type="text"
+              placeholder="Teléfono, usuario o correo electrónico"
+            />
+            <input
+              className="form__input"
+              type="password"
+              placeholder="Contraseña"
+              name=""
+              id=""
+            />
+            <Link to={"/Home"} className="form__button" disabled>
+              Iniciar sesión
+            </Link>
+            <div className="form__decoration">
+              <div className="form__decoration__line"></div>
+              <div className="form__decoration__circle"></div>
+              <div className="form__decoration__line"></div>
             </div>
-            <div className="login__body__box__account">
-              <p>¿No tienes una cuenta?</p>
-              <a href="#!" className="login__body__box__account__register">
-                Registrate
+            <a href="#!" className="form__fb-login">
+              <i className="fab fa-facebook-square"></i> Iniciar sesión con
+              Facebook
+            </a>
+            <a href="#!" className="form__forgotten-password">
+              ¿Has olvidado la contraseña?
+            </a>
+          </div>
+          <div className="account">
+            <p>¿No tienes una cuenta?</p>
+            <a href="#!" className="account__register">
+              Registrate
+            </a>
+          </div>
+          <div className="download">
+            <p>Descarga la aplicación.</p>
+            <div className="download__stores">
+              <a href="#!">
+                <img className="store" src={appstore} alt="appstore" />
               </a>
-            </div>
-            <div className="login__body__box__download">
-              <p>Descarga la aplicación.</p>
-              <div className="login__body__box__download__stores">
-                <a href="#!">
-                  <img
-                    className="login__body__box__download__stores__store"
-                    src={appstore}
-                    alt="appstore"
-                  />
-                </a>
-                <a href="#!">
-                  <img
-                    className="login__body__box__download__stores__store"
-                    src={googleplay}
-                    alt="googleplay"
-                  />
-                </a>
-              </div>
+              <a href="#!">
+                <img className="store" src={googleplay} alt="googleplay" />
+              </a>
             </div>
           </div>
         </div>
