@@ -32,21 +32,24 @@ const Home = () => {
               <span className="home-profile__profile-account">Gretel</span>
             </div>
           </div>
-          <div className="history-nav">
-            <span className="history-nav__title">Historias</span>
-            <a className="history-nav__see-all" href="#!">
+          <div className="box-nav">
+            <span className="box-nav__title">Historias</span>
+            <a className="box-nav__see-all" href="#!">
               Ver todas
             </a>
           </div>
-          <div className="history-container">
+          <div className="box-container">
             {feeds.map(k => (
               <History feed={k} key={k.id} />
             ))}
           </div>
-          {/* <div className="home__sidebar__suggested-profiles">
-                        <div className="home__sidebar__suggested-profiles__profiles-nav"></div>
-                        <div className="home__sidebar__suggested-profiles__profiles-history"></div>
-                    </div> */}
+          <div className="box-nav">
+            <span className="box-nav__title">Sugerencias para ti</span>
+            <a className="box-nav__see-all" href="#!">
+              Ver todo
+            </a>
+          </div>
+          <div className="box-container box-container--profiles"></div>
         </div>
       </div>
     </>

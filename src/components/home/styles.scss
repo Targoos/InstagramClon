@@ -54,7 +54,7 @@
   }
 }
 
-.history-nav {
+.box-nav {
   padding: 0.7rem 0.9rem 0.5rem 0.9rem;
   display: flex;
   justify-content: space-between;
@@ -81,7 +81,7 @@
   }
 }
 
-.history-container {
+.box-container {
   width: 285px;
   height: 200px;
   background-color: $white;
@@ -91,8 +91,13 @@
   border-bottom-left-radius: $radius;
   border-bottom-right-radius: $radius;
   overflow-y: auto;
+  margin-bottom: .7rem;
 
   &__history-profiles {
     height: auto;
   }
+}
+
+.box-container--profiles {
+  height: 130px;
 }
