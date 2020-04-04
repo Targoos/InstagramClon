@@ -1,49 +1,47 @@
 @import "../../../assets/scss/styles.scss";
 
 .historys {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 0.3rem;
+
+  &__history-profile {
+    margin: 0.35rem 0.8rem;
+  }
+
+  &__history-decoration {
+    height: 41px;
+    width: 41px;
+    border-radius: 50%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    padding: 0 .3rem;
+    justify-content: center;
+    background: linear-gradient(
+      to right top,
+      #feda75,
+      #fa7e1e,
+      #d62976,
+      #962fbf
+    );
+  }
 
-    &__history-profile {
-        margin: 0.35rem 0.8rem;
-        
-        &__history-decoration {
-            height: 41px;
-            width: 41px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(
-              to right top,
-              #feda75,
-              #fa7e1e,
-              #d62976,
-              #962fbf
-            );
+  &__profile-avatar {
+    width: 37px;
+    margin: 0.3rem;
+    border-radius: 50%;
+    border: 2px solid $white;
+  }
 
-            &__profile-avatar {
-                width: 37px;
-                margin: .3rem;
-                border-radius: 50%;
-                border: 2px solid $white;
-            }
-        }
-        
-    }
+  &__history {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &__history {
-        display: flex;
-        flex-direction: column;
-
-        &__history-account{
-            text-decoration: none;
-            color: $black;
-            font-size: .9rem;
-            font-weight: 600;
-
-        }
-    }
+  &__history-account {
+    text-decoration: none;
+    color: $black;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
 }

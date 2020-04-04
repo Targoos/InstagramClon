@@ -17,82 +17,82 @@
     display: block;
     width: 100%;
     margin: auto auto auto 660px;
+  }
+}
 
-    &__home-profile {
-      display: flex;
-      align-items: center;
-      margin-bottom: 0.7rem;
+.home-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
 
-      &__profile-picture {
-        margin: 0.1rem;
+  &__profile-picture {
+    margin: 0.1rem;
+  }
 
-        &__profile-image {
-          width: 3.2rem;
-          border-radius: $radius50;
-        }
-      }
+  &__profile-image {
+    width: 3.2rem;
+    border-radius: $radius50;
+  }
 
-      &__profile-account {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0.7rem;
+  &__profile-account {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.7rem;
+  }
 
-        &__profile-name {
-          font-weight: 600;
-          font-size: 0.9rem;
-          text-decoration: none;
-          color: $black;
-        }
+  &__profile-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: $black;
+  }
 
-        &__profile-account {
-          font-weight: 400;
-          font-size: 0.7rem;
-          color: $gray5;
-        }
-      }
-    }
+  &__profile-account {
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: $gray5;
+  }
+}
 
-    &__history-nav {
-      padding: 0.7rem 0.9rem 0.5rem 0.9rem;
-      display: flex;
-      justify-content: space-between;
-      width: 285px;
-      align-items: center;
-      background-color: $white;
-      border-top: 1px solid $gray2;
-      border-right: 1px solid $gray2;
-      border-left: 1px solid $gray2;
-      border-radius: $radius;
+.history-nav {
+  padding: 0.7rem 0.9rem 0.5rem 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  width: 285px;
+  align-items: center;
+  background-color: $white;
+  border-top: 1px solid $gray2;
+  border-right: 1px solid $gray2;
+  border-left: 1px solid $gray2;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
 
-      &__title {
-        color: $gray5;
-        font-weight: 600;
-        font-size: 0.9rem;
-      }
+  &__title {
+    color: $gray5;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
 
-      &__see-all {
-        text-decoration: none;
-        color: $black;
-        font-weight: 600;
-        font-size: .7rem;
-      }
-    }
+  &__see-all {
+    text-decoration: none;
+    color: $black;
+    font-weight: 600;
+    font-size: 0.7rem;
+  }
+}
 
-    &__history-container {
-      width: 285px;
-      height: 200px;
-      background-color: $white;
-      border-right: 1px solid $gray2;
-      border-bottom: 1px solid $gray2;
-      border-left: 1px solid $gray2;
-      border-radius: $radius;
-      overflow-y: auto;
+.history-container {
+  width: 285px;
+  height: 200px;
+  background-color: $white;
+  border-right: 1px solid $gray2;
+  border-bottom: 1px solid $gray2;
+  border-left: 1px solid $gray2;
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+  overflow-y: auto;
 
-      
-
-      &__history-profiles {
-        height: auto;
-      }
-    }
+  &__history-profiles {
+    height: auto;
   }
 }

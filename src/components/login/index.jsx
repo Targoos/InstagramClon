@@ -30,9 +30,9 @@ const Login = () => {
               Iniciar sesión
             </Link>
             <div className="form__decoration">
-              <div className="form__decoration__line"></div>
-              <div className="form__decoration__circle"></div>
-              <div className="form__decoration__line"></div>
+              <div className="form__line"></div>
+              <div className="form__circle"></div>
+              <div className="form__line"></div>
             </div>
             <a href="#!" className="form__fb-login">
               <i className="fab fa-facebook-square"></i> Iniciar sesión con
@@ -52,10 +52,10 @@ const Login = () => {
             <p>Descarga la aplicación.</p>
             <div className="download__stores">
               <a href="#!">
-                <img className="store" src={appstore} alt="appstore" />
+                <img className="download__store" src={appstore} alt="appstore" />
               </a>
               <a href="#!">
-                <img className="store" src={googleplay} alt="googleplay" />
+                <img className="download__store" src={googleplay} alt="googleplay" />
               </a>
             </div>
           </div>

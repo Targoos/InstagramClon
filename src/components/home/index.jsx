@@ -17,43 +17,30 @@ const Home = () => {
           ))}
         </div>
         <div className="home__sidebar">
-          <div className="home__sidebar__home-profile">
-            <a
-              className="home__sidebar__home-profile__profile-picture"
-              href="#!"
-            >
+          <div className="home-profile">
+            <a className="home-profile__profile-picture" href="#!">
               <img
-                className="home__sidebar__home-profile__profile-picture__profile-image"
+                className="home-profile__profile-image"
                 src={Gretel}
                 alt="profile"
               />
             </a>
-            <div className="home__sidebar__home-profile__profile-account">
-              <a
-                className="home__sidebar__home-profile__profile-account__profile-name"
-                href="#!"
-              >
+            <div className="home-profile__profile-account">
+              <a className="home-profile__profile-name" href="#!">
                 Kiscia
               </a>
-              <span className="home__sidebar__home-profile__profile-account__profile-account">
-                Gretel
-              </span>
+              <span className="home-profile__profile-account">Gretel</span>
             </div>
           </div>
-          <div className="home__sidebar__history-nav">
-              <span className="home__sidebar__history-nav__title">
-                Historias
-              </span>
-              <a
-                className="home__sidebar__history-nav__see-all"
-                href="#!"
-              >
-                Ver todas
-              </a>
+          <div className="history-nav">
+            <span className="history-nav__title">Historias</span>
+            <a className="history-nav__see-all" href="#!">
+              Ver todas
+            </a>
           </div>
-          <div className="home__sidebar__history-container">
+          <div className="history-container">
             {feeds.map(k => (
-              <History feed={k} key={k.id}/>
+              <History feed={k} key={k.id} />
             ))}
           </div>
           {/* <div className="home__sidebar__suggested-profiles">

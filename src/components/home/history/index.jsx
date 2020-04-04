@@ -8,16 +8,16 @@ const History = ({ feed }) => {
     <>
       <div className="historys">
         <a className="historys__history-profile" href="">
-          <div className="historys__history-profile__history-decoration">
+          <div className="historys__history-decoration">
             <img
-              className="historys__history-profile__history-decoration__profile-avatar"
+              className="historys__profile-avatar"
               src={avatar}
               alt={avatar}
             />
           </div>
         </a>
         <div className="historys__history">
-          <a className="historys__history__history-account" href="#!">
+          <a className="historys__history-account" href="#!">
             {user}
           </a>
         </div>

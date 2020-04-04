@@ -8,53 +8,34 @@ const Post = ({ feed }) => {
     <>
       <div className="post">
         <div className="post__post-header">
-          <div className="post__post-header__post-profile">
-            <a
-              className="post__post-header__post-profile__account-avatar"
-              href="#!"
-            >
-              <div className="post__post-header__post-profile__account-avatar__avatar-decoration">
-                <img
-                  className="post__post-header__post-profile__account-avatar__avatar-decoration__avatar-image"
-                  src={avatar}
-                  alt={avatar}
-                />
+          <div className="post__post-profile">
+            <a className="post__account-avatar" href="#!">
+              <div className="post__avatar-decoration">
+                <img className="post__avatar-image" src={avatar} alt={avatar} />
               </div>
             </a>
-            <a
-              className="post__post-header__post-profile__account-name"
-              href="#!"
-            >
+            <a className="post__account-name" href="#!">
               {user}
             </a>
           </div>
-          <a className="post__post-header__menu-dots" href="#!">
+          <a className="post__menu-dots" href="#!">
             <i className="fas fa-ellipsis-h"></i>
           </a>
         </div>
         <img className="post__image-post" src={post} alt={post} />
         <div className="post__post-footer">
-          <div className="post__post-footer__post-action">
-            <a
-              className="post__post-footer__post-action__action-link"
-              href="#!"
-            >
+          <div className="post__post-action">
+            <a className="post__action-link" href="#!">
               <i className="far fa-heart"></i>
             </a>
-            <a
-              className="post__post-footer__post-action__action-link"
-              href="#!"
-            >
+            <a className="post__action-link" href="#!">
               <i className="far fa-comment"></i>
             </a>
-            <a
-              className="post__post-footer__post-action__action-link"
-              href="#!"
-            >
+            <a className="post__action-link" href="#!">
               <i className="far fa-paper-plane"></i>
             </a>
           </div>
-          <a className="post__post-footer__post-save" href="#!">
+          <a className="post__post-save" href="#!">
             <i className="far fa-bookmark"></i>
           </a>
         </div>
@@ -62,10 +43,10 @@ const Post = ({ feed }) => {
           {likes} Me gusta
         </a>
         <div className="post__post-comments">
-          <a className="post__post-comments__user-comment" href="#!">
+          <a className="post__user-comment" href="#!">
             {user}
           </a>
-          <span className="post__post-comments__comment">{comment}</span>
+          <span className="post__comment">{comment}</span>
         </div>
         <a className="post__comments" href="#!">
           Ver los {likes} comentarios

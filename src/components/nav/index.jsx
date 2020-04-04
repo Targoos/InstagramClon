@@ -13,37 +13,33 @@ const Nav = () => {
       {location === "/" ? null : (
         <>
           <div className="nav">
-            <div className="nav__nav-header">
-              <a className="nav__nav-header__nav-left" href="#!">
-                <img
-                  className="nav__nav-header__nav-left__logo"
-                  src={logo}
-                  alt="logo"
-                />
+            <div className="nav-header">
+              <a className="nav-header__nav-left" href="#!">
+                <img className="nav-header__logo" src={logo} alt="logo" />
               </a>
-              <div className="nav__nav-header__nav-center">
+              <div className="nav-header__nav-center">
                 <input
-                  className="nav__nav-header__nav-center__input"
+                  className="nav-header__input"
                   type="text"
                   placeholder="Busca"
                 />
               </div>
-              <div className="nav__nav-header__nav-right">
-                <a className="nav__nav-header__nav-right__nav-link" href="#!">
+              <div className="nav-header__nav-right">
+                <a className="nav-header__nav-link" href="#!">
                   <i className="fas fa-home"></i>
                 </a>
-                <a className="nav__nav-header__nav-right__nav-link" href="#!">
+                <a className="nav-header__nav-link" href="#!">
                   <i className="far fa-paper-plane"></i>
                 </a>
-                <a className="nav__nav-header__nav-right__nav-link" href="#!">
+                <a className="nav-header__nav-link" href="#!">
                   <i className="far fa-compass"></i>
                 </a>
-                <a className="nav__nav-header__nav-right__nav-link" href="#!">
+                <a className="nav-header__nav-link" href="#!">
                   <i className="far fa-heart"></i>
                 </a>
-                <a className="nav__nav-header__nav-right__nav-link" href="#!">
+                <a className="nav-header__nav-link" href="#!">
                   <img
-                    className="nav__nav-header__nav-right__nav-link__image"
+                    className="nav-header__image"
                     src={Gretel}
                     alt="profile"
                   />

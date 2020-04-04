@@ -5,64 +5,64 @@
   border-bottom: 1px solid $gray2;
   position: fixed;
   width: 100%;
+}
 
-  &__nav-header {
-    max-width: 1010px;
-    padding: 0 1rem 0 1rem;
-    width: 100%;
+.nav-header {
+  max-width: 1010px;
+  padding: 0 1rem 0 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  &__nav-left {
+    width: 33.333%;
+  }
+
+  &__logo {
+    margin-top: 0.5rem;
+    width: 140px;
+  }
+
+  &__nav-center {
+    width: 33.333%;
+    text-align: center;
+  }
+
+  &__input {
+    border: solid 1px $gray2;
+    padding: 0.3rem 1.4rem;
+    border-radius: $radius;
+    color: $gray2;
+    cursor: text;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
+    background: $gray1;
+
+    &input:active,
+    &:focus {
+      text-align: left;
+    }
+  }
+
+  &__nav-right {
+    width: 33.333%;
     display: flex;
+    justify-content: flex-end;
+  }
+
+  &__nav-link {
     align-items: center;
-    margin: 0 auto;
+    justify-content: center;
+    margin: 0.7rem;
+    color: $black;
+    font-size: 22px;
+  }
 
-    &__nav-left {
-      width: 33.333%;
-
-      &__logo {
-        margin-top: 0.5rem;
-        width: 140px;
-      }
-    }
-
-    &__nav-center {
-      width: 33.333%;
-      text-align: center;
-
-      &__input {
-        border: solid 1px $gray2;
-        padding: 0.3rem 1.4rem;
-        border-radius: $radius;
-        color: $gray2;
-        cursor: text;
-        font-size: 0.9rem;
-        font-weight: 300;
-        text-align: center;
-        background: $gray1;
-
-        &input:active,
-        &:focus {
-          text-align: left;
-        }
-      }
-    }
-
-    &__nav-right {
-      width: 33.333%;
-      display: flex;
-      justify-content: flex-end;
-
-      &__nav-link {
-        align-items: center;
-        justify-content: center;
-        margin: 0.7rem;
-        color: $black;
-        font-size: 22px;
-
-        &__image {
-          width: 22px;
-          border-radius: $radius50;
-          margin: 0.2rem 1rem 0 0;
-        }
-      }
-    }
+  &__image {
+    width: 22px;
+    border-radius: $radius50;
+    margin: 0.2rem 1rem 0 0;
   }
 }
