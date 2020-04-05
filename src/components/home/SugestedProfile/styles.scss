@@ -1,40 +1,39 @@
 @import "../../../assets/scss/styles.scss";
 
 .sugested-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__profile-box {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    padding: 0 0.3rem;
+  }
 
-    &__profile-box {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 0 0.3rem;
-        
-    }
+  &__profile-link {
+    margin: 0 0.8rem;
+  }
 
-    &__profile-link {
-        margin: 0 .8rem;
-    }
+  &__profile-image {
+    width: 30px;
+    margin: 0.3rem;
+    border-radius: $radius50;
+  }
 
-    &__profile-image {
-        width: 30px;
-        margin: 0.3rem;
-        border-radius: $radius50;
-    }
+  &__profile-account {
+    text-decoration: none;
+    color: $black;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
 
-    &__profile-account {
-        text-decoration: none;
-        color: $black;
-        font-size: 0.9rem;
-        font-weight: 600;
-    }
-
-    &__profile-follow {
-        text-decoration: none;
-        color: $blue;
-        font-weight: 600;
-        font-size: .8rem;
-        margin-right: 1rem;
-    }
+  &__profile-follow {
+    text-decoration: none;
+    color: $blue;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+  }
 }

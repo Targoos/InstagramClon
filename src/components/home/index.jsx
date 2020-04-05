@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <div className="home">
         <div className="home__posts">
-          {feeds.map(i => (
+          {feeds.map((i) => (
             <Post feed={i} key={i.id} />
           ))}
         </div>
@@ -42,7 +42,7 @@ const Home = () => {
             </a>
           </div>
           <div className="box-container">
-            {feeds.map(k => (
+            {feeds.map((k) => (
               <History feed={k} key={k.id} />
             ))}
           </div>
@@ -53,21 +53,41 @@ const Home = () => {
             </a>
           </div>
           <div className="box-container box-container--profiles">
-              {profiles.map(l => (
-                <SugestedProfile profile={l} key={l.id}/>
-              ))}
+            {profiles.map((l) => (
+              <SugestedProfile profile={l} key={l.id} />
+            ))}
           </div>
           <div className="sidebar-footer">
-            <a href="#!" className="sidebar-footer__sidebar-link">Informacion</a>
-            <a href="#!" className="sidebar-footer__sidebar-link">Ayuda</a>
-            <a href="#!" className="sidebar-footer__sidebar-link">Prensa</a>
-            <a href="#!" className="sidebar-footer__sidebar-link">API</a>
-            <a href="#!" className="sidebar-footer__sidebar-link">Empleo</a>
-            <a href="#!" className="sidebar-footer__sidebar-link">Privacidad</a>
-            <a href="#!" className="sidebar-footer__sidebar-link">Condiciones</a>
-            <a href="#!" className="sidebar-footer__sidebar-link">Ubicaciones</a>
-            <a href="#!" className="sidebar-footer__sidebar-link">Cuentas destacadas</a>
-            <p className="sidebar-footer__sidebar-p" >&copy; 2020 InstagramClon made by Tulio Ramirez</p>
+            <a href="#!" className="sidebar-footer__sidebar-link">
+              Informacion
+            </a>
+            <a href="#!" className="sidebar-footer__sidebar-link">
+              Ayuda
+            </a>
+            <a href="#!" className="sidebar-footer__sidebar-link">
+              Prensa
+            </a>
+            <a href="#!" className="sidebar-footer__sidebar-link">
+              API
+            </a>
+            <a href="#!" className="sidebar-footer__sidebar-link">
+              Empleo
+            </a>
+            <a href="#!" className="sidebar-footer__sidebar-link">
+              Privacidad
+            </a>
+            <a href="#!" className="sidebar-footer__sidebar-link">
+              Condiciones
+            </a>
+            <a href="#!" className="sidebar-footer__sidebar-link">
+              Ubicaciones
+            </a>
+            <a href="#!" className="sidebar-footer__sidebar-link">
+              Cuentas destacadas
+            </a>
+            <p className="sidebar-footer__sidebar-p">
+              &copy; 2020 InstagramClon made by Tulio Ramirez
+            </p>
           </div>
         </div>
       </div>

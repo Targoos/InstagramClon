@@ -6,7 +6,7 @@ export const userFeeds = [
     name: "Thomas",
     post: "https://iili.io/JKjJef.jpg",
     likes: 25,
-    comment: "Desde el cielo"
+    comment: "Desde el cielo",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const userFeeds = [
     name: "Jackeline",
     post: "https://iili.io/JKjdb4.jpg",
     likes: "32",
-    comment: "Violeta <3"
+    comment: "Violeta <3",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const userFeeds = [
     name: "Orianna",
     post: "https://iili.io/JKj3zl.jpg",
     likes: 47,
-    comment: "Tan bonita que era chiquita"
+    comment: "Tan bonita que era chiquita",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const userFeeds = [
     name: "Andrew",
     post: "https://iili.io/JKjFX2.jpg",
     likes: 12,
-    comment: "from above"
+    comment: "from above",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const userFeeds = [
     name: "Beth",
     post: "https://iili.io/JKjKsS.jpg",
     likes: 17,
-    comment: "Que dia ese!"
+    comment: "Que dia ese!",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const userFeeds = [
     name: "Morgana",
     post: "https://iili.io/JKjqq7.jpg",
     likes: 33,
-    comment: "Mis amorcitos"
+    comment: "Mis amorcitos",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const userFeeds = [
     name: "Anthony",
     post: "https://iili.io/JKjCge.jpg",
     likes: 18,
-    comment: "Quiero volver a ese dia"
+    comment: "Quiero volver a ese dia",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ export const userFeeds = [
     name: "Laura",
     post: "https://iili.io/JKjB19.jpg",
     likes: 49,
-    comment: "Roberto el oso perruno"
+    comment: "Roberto el oso perruno",
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ export const userFeeds = [
     name: "Herald",
     post: "https://iili.io/JKjY11.jpg",
     likes: 44,
-    comment: "Ahora si tengo al para jugar"
+    comment: "Ahora si tengo al para jugar",
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ export const userFeeds = [
     name: "Dayanna",
     post: "https://iili.io/JKjodu.jpg",
     likes: 29,
-    comment: "Merecemos respeto"
+    comment: "Merecemos respeto",
   },
   {
     id: 11,
@@ -96,7 +96,7 @@ export const userFeeds = [
     name: "Lucius",
     post: "https://iili.io/JKj7qP.jpg",
     likes: 31,
-    comment: "Verdad que es perfecta?"
+    comment: "Verdad que es perfecta?",
   },
   {
     id: 12,
@@ -105,7 +105,7 @@ export const userFeeds = [
     name: "Simon",
     post: "https://iili.io/JKjx5b.jpg",
     likes: 5,
-    comment: "Amor mio"
+    comment: "Amor mio",
   },
   {
     id: 13,
@@ -114,7 +114,7 @@ export const userFeeds = [
     name: "Jhenifer",
     post: "https://iili.io/JKjAXV.jpg",
     likes: 46,
-    comment: "S2"
+    comment: "S2",
   },
   {
     id: 14,
@@ -123,7 +123,7 @@ export const userFeeds = [
     name: "Daniela",
     post: "https://iili.io/JKjImx.jpg",
     likes: 8,
-    comment: "Todas locas"
+    comment: "Todas locas",
   },
   {
     id: 15,
@@ -132,7 +132,7 @@ export const userFeeds = [
     name: "Aron",
     post: "https://iili.io/JKjzej.jpg",
     likes: 25,
-    comment: "Lo mas bello es la moto"
+    comment: "Lo mas bello es la moto",
   },
   {
     id: 16,
@@ -141,7 +141,7 @@ export const userFeeds = [
     name: "Celeste",
     post: "https://iili.io/JKjuzQ.jpg",
     likes: 9,
-    comment: "Como te extraño"
+    comment: "Como te extraño",
   },
   {
     id: 17,
@@ -150,6 +150,6 @@ export const userFeeds = [
     name: "Victor",
     post: "https://iili.io/JKjRLB.jpg",
     likes: 16,
-    comment: "La infancia"
-  }
+    comment: "La infancia",
+  },
 ];

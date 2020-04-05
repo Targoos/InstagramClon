@@ -53,8 +53,15 @@ const Post = ({ feed }) => {
         </a>
         <div className="post__comment-box">
           <form className="post__comment-elements">
-            <textarea className="post__comment-text" placeholder="Añade un comentario..." cols="30" rows="10"></textarea>
-            <button className="post__comment-submit" disabled>Publicar</button>
+            <textarea
+              className="post__comment-text"
+              placeholder="Añade un comentario..."
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button className="post__comment-submit" disabled>
+              Publicar
+            </button>
           </form>
         </div>
       </div>
