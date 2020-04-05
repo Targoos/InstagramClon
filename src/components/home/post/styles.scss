@@ -3,7 +3,6 @@
 .post {
   border: 1px solid $gray2;
   border-radius: $radius;
-  padding-bottom: 2rem;
   margin-bottom: 4rem;
   background-color: $white;
 
@@ -112,5 +111,43 @@
     font-weight: 400;
     font-size: 0.9rem;
     padding: 0 0.3rem 0.5rem 1.3rem;
+  }
+
+  &__comment-box {
+    border-top: 1px solid $gray2;
+    margin-top: .6rem;
+    height: 3.3rem;
+    padding: 1rem;
+  }
+
+  &__comment-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: .2rem;
+  }
+
+  &__comment-text {
+    font-family: $main-font;
+    font-weight: 500;
+    color: $gray4;
+    font-size: .9rem;
+    border: 0;
+    max-height: 1.3rem;
+    outline: 0;
+    resize: none;
+  }
+
+  &__comment-submit {
+    border: 0;
+    background-color: $white;
+    color: $blue;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:active {
+      border-color: 0;
+    }
   }
 }

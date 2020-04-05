@@ -31,13 +31,13 @@
 
   &__profile-image {
     width: 3.2rem;
+    margin: 0 .7rem 0 .3rem;
     border-radius: $radius50;
   }
 
   &__profile-account {
     display: flex;
     flex-direction: column;
-    margin-left: 0.7rem;
   }
 
   &__profile-name {
@@ -99,5 +99,31 @@
 }
 
 .box-container--profiles {
-  height: 130px;
+  height: 140px;
+}
+
+.sidebar-footer {
+  width: 285px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: .7rem;
+
+  &__sidebar-link {
+    color: $gray3;
+    font-weight: 600;
+    padding-bottom: .1rem;
+    text-decoration: none;
+
+    &::after {
+      content: ".";
+      margin: .1rem;
+    }
+  }
+
+  &__sidebar-p {
+    color: $gray3;
+    text-transform: uppercase;
+    font-size: .8rem;
+  }
+  
 }
